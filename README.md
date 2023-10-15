@@ -1,8 +1,12 @@
-# React + Vite
+# Sonic Strings (Gamitar Frontend Assignment)
+Sonic Strings is a guitar store where users are able to buy guitars and guitar accessories.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an assignment given by **Mohsin Menon** from **Gamitar** - ```"Game-Based Learning Made Easy".```
 
-Currently, two official plugins are available:
+> **Note:- Not implemented cart functionality.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Home Page -
+![Home Page](src/assets/Project%20snapshots/Home.png)
+
+## Guitars Page (Sonic Strings Store) -
+![Guitars Page](src/assets/Project%20snapshots/Store.png)
