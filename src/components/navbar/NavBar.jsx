@@ -11,13 +11,15 @@ const NavBar = ({ size }) => {
         <div className="navbar__menu">
           <ul className="nav__menu">
             <Link to="/" style={{ textDecoration: 'none', color: 'white' }}><li className="nav__item">Home</li></Link>
-            <Link to="guitars" style={{ textDecoration: 'none', color: 'white' }}><li className="nav__item">Guitars</li></Link>
+            <Link to="/guitars" style={{ textDecoration: 'none', color: 'white' }}><li className="nav__item">Guitars</li></Link>
           </ul>
           
         </div>
 
         <div className="cart">
+        <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
           <i className="cart__icon bx bx-cart"></i>
+          </Link>
           <span>{size}</span>
         </div>
       </div>

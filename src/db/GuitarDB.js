@@ -36,6 +36,7 @@ const guitarData = [
     color: "Black",
     image: image1,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "2",
@@ -49,6 +50,7 @@ const guitarData = [
     color: "Red",
     image: image2,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "3",
@@ -62,6 +64,7 @@ const guitarData = [
     color: "Brown",
     image: image3,
     material: "Wooden",
+    quantity: 1,
   },
   {
     serialNumber: "4",
@@ -75,6 +78,7 @@ const guitarData = [
     color: "Red",
     image: image4,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "5",
@@ -88,6 +92,7 @@ const guitarData = [
     color: "Brown",
     image: image5,
     material: "Wooden",
+    quantity: 1,
   },
   {
     serialNumber: "6",
@@ -101,6 +106,7 @@ const guitarData = [
     color: "Brown",
     image: image6,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "7",
@@ -114,6 +120,7 @@ const guitarData = [
     color: "Blue",
     image: image7,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "8",
@@ -127,6 +134,7 @@ const guitarData = [
     color: "Red",
     image: image8,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "9",
@@ -140,6 +148,7 @@ const guitarData = [
     color: "Red",
     image: image9,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "10",
@@ -153,6 +162,7 @@ const guitarData = [
     color: "Blue",
     image: image10,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "11",
@@ -166,6 +176,7 @@ const guitarData = [
     color: "Brown",
     image: image11,
     material: "Wooden",
+    quantity: 1,
   },
   {
     serialNumber: "12",
@@ -179,6 +190,7 @@ const guitarData = [
     color: "Brown",
     image: image12,
     material: "Wooden",
+    quantity: 1,
   },
   {
     serialNumber: "13",
@@ -192,6 +204,7 @@ const guitarData = [
     color: "Brown",
     image: image13,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "14",
@@ -205,6 +218,7 @@ const guitarData = [
     color: "Black",
     image: image14,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "15",
@@ -218,6 +232,7 @@ const guitarData = [
     color: "Red",
     image: image15,
     material: "Wooden",
+    quantity: 1,
   },
   {
     serialNumber: "16",
@@ -231,6 +246,7 @@ const guitarData = [
     color: "Blue",
     image: image16,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "17",
@@ -244,6 +260,7 @@ const guitarData = [
     color: "Black",
     image: image17,
     material: "Wooden",
+    quantity: 1,
   },
   {
     serialNumber: "18",
@@ -257,6 +274,7 @@ const guitarData = [
     color: "Red",
     image: image18,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "19",
@@ -270,6 +288,7 @@ const guitarData = [
     color: "Blue",
     image: image19,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "20",
@@ -283,6 +302,7 @@ const guitarData = [
     color: "Brown",
     image: image20,
     material: "Plastic",
+    quantity: 1,
   },
   {
     serialNumber: "21",
@@ -296,6 +316,7 @@ const guitarData = [
     color: "Blue",
     image: image21,
     material: "Leather",
+    quantity: 1,
   },
   {
     serialNumber: "22",
@@ -309,6 +330,7 @@ const guitarData = [
     color: "Black",
     image: image22,
     material: "Leather",
+    quantity: 1,
   },
   {
     serialNumber: "23",
@@ -322,6 +344,7 @@ const guitarData = [
     color: "Brown",
     image: image23,
     material: "Leather",
+    quantity: 1,
   },
   {
     serialNumber: "24",
@@ -335,6 +358,7 @@ const guitarData = [
     color: "Red",
     image: image24,
     material: "Leather",
+    quantity: 1,
   },
 ];
 

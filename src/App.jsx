@@ -5,13 +5,40 @@ import Guitars from "./pages/Guitars";
 import Card from './components/card/Card'
 // Database
 import guitarData from "./db/GuitarDB";
+import Cart from "./components/cart/Cart";
 // import ProductPage from "./pages/ProductPage";
 
 
 function App() {
   const[selectedCategory, setSelectedCategory] = useState(null);
     const [query, setQuery] = useState("");
-    const size = 0;
+    // const [size, setSize] = useState(0);
+    const [isCartOpen, setIsCartOpen] = useState(false);
+    const [cart, setCart] = useState([]);
+
+    // handle cart size
+    const handleCartSize = () => {
+
+    }
+
+    //cart display on
+    const handleCartClick = (val) => {
+      if(val === false){
+        setIsCartOpen(true);
+      }
+    }
+
+    // cart close
+    const handleCartCloseClick = () => {
+      setIsCartOpen(false);
+    }
+
+    // cart list 
+    const handleAddToCartClick = (product) => {
+      // console.log(product);
+      setCart([...cart, product]);
+    }
+    // console.log(cart);
     
     // Input Filter
     const handleInputChange = (e) => {
@@ -52,8 +79,9 @@ function App() {
         );
       }
 
-      return filteredProducts.map(({ serialNumber, title, brandName, modelName, guitarType, numberOfStrings, prevPrice, price, color, image, material }) => (
+      return filteredProducts.map(({ serialNumber, title, brandName, modelName, guitarType, numberOfStrings, prevPrice, price, color, image, material, quantity }) => (
         <Card 
+          serialNumber={serialNumber}
           key={serialNumber}
           title={title}
           brandName={brandName}
@@ -65,6 +93,8 @@ function App() {
           color={color}
           image={image}
           material={material}
+          quantity={quantity}
+          handleAddToCartClick={handleAddToCartClick}
         />
       ))
     }
@@ -74,12 +104,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={ <Home size={size}/> } />
+        <Route path="/" element={ <Home size={cart.length}/> } />
+        <Route path="/cart" element={ <Cart size={cart.length} cart={cart} /> } />
         <Route 
-          path="guitars" 
+          path="/guitars" 
           element={ 
             <Guitars 
-              size={size} 
+              size={cart.length} 
               handleChange={handleChange} 
               query={query} 
               handleInputChange={handleInputChange} 

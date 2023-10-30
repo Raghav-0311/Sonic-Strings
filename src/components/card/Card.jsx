@@ -3,7 +3,7 @@ import "./card.css";
 // import { Link } from 'react-router-dom';
 // import guitar from "../../assets/guitars/1.png";
 
-const Card = ({ title, brandName, modelName, guitarType, numberOfStrings, prevPrice, price, color, image, material }) => {
+const Card = ({ serialNumber, title, brandName, modelName, guitarType, numberOfStrings, prevPrice, price, color, image, material, handleAddToCartClick, quantity }) => {
   return (
     
     <div className='product'>
@@ -34,7 +34,17 @@ const Card = ({ title, brandName, modelName, guitarType, numberOfStrings, prevPr
                 </div>
 
                 <div className="add__to__cart">
-                    <button 
+                    <button
+                        onClick={() => handleAddToCartClick({
+                            serialNumber, 
+                            title, 
+                            brandName, modelName, guitarType, numberOfStrings, prevPrice, 
+                            price, 
+                            color, 
+                            image, 
+                            material,
+                            quantity,
+                        })} 
                         className='product__atc__btn'
                     >
                         Add to cart
